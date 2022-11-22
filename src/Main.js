@@ -15,10 +15,18 @@ const Main = () => {
         </p>
         <a href="/">Learn more</a>
         <div className="teams">
-          <img src={databiz} alt="" />
-          <img src={audiophile} alt="" />
-          <img src={meet} alt="" />
-          <img src={maker} alt="" />
+          <div className="img-wrapper">
+            <img src={databiz} alt="" />
+          </div>
+          <div className="img-wrapper">
+            <img src={audiophile} alt="" />
+          </div>
+          <div className="img-wrapper">
+            <img src={meet} alt="" />
+          </div>
+          <div className="img-wrapper">
+            <img src={maker} alt="" />
+          </div>
         </div>
       </section>
       <div className="img-wrapper">

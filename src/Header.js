@@ -29,13 +29,21 @@ const Header = () => {
       dropdown.style.display = "none";
     }
   };
+  const handleMenu = () => {
+    const menu = document.querySelector(".menu");
+    const layer = document.querySelector(".layer");
+    const nav = document.querySelector(".nav-wrapper");
+    menu.classList.toggle("active");
+    layer.classList.toggle("active");
+    nav.classList.toggle("show");
+  };
 
   return (
     <header>
+      <div className="logo">
+        <img src={logo} alt="" />
+      </div>
       <div className="nav-wrapper">
-        <div className="logo">
-          <img src={logo} alt="" />
-        </div>
         <nav>
           <ul>
             <li id="feature">
@@ -87,15 +95,16 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <div className="buttons">
+          <a href="/" id="login">
+            Login
+          </a>
+          <a href="/" id="register">
+            Register
+          </a>
+        </div>
       </div>
-      <div className="buttons">
-        <a href="/" id="login">
-          Login
-        </a>
-        <a href="/" id="register">
-          Register
-        </a>
-      </div>
+      <div className="menu" onClick={() => handleMenu()}></div>
     </header>
   );
 };

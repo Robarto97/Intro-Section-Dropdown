@@ -53,8 +53,51 @@ header {
           font-family: "Epilogue", sans-serif;
           cursor: pointer;
         }
+
         a {
           color: $mediumGray;
+        }
+      }
+      #feature {
+        position: relative;
+        ul {
+          position: absolute;
+          top: 200%;
+          right: 0%;
+          width: 170px;
+          display: none;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+          border-radius: 15px;
+          background-color: white;
+          padding: 1.5rem;
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            
+          li{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            gap: 1rem;
+            align-items: center;
+          }
+        }
+      }
+      #comp {
+        position: relative;
+        ul {
+          position: absolute;
+          top: 200%;
+          left: 0%;
+          width: 115px;
+          display: none;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+          border-radius: 15px;
+          background-color: white;
+          padding: 1.5rem 1.25rem;
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
         }
       }
       button:hover,
@@ -107,42 +150,42 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    h1{
-        font-size: 5.25rem;
-        line-height: 0.9;
-        span{
-            display: block;
-        }
+    h1 {
+      font-size: 5.25rem;
+      line-height: 0.9;
+      span {
+        display: block;
+      }
     }
-    p{
-        font-size: 1.25rem;
-        padding-right: 8rem;
-        color: $mediumGray;
-        line-height: 1.3;
+    p {
+      font-size: 1.25rem;
+      padding-right: 8rem;
+      color: $mediumGray;
+      line-height: 1.3;
     }
-    a{
-        color: $white;
-        font-weight: 700;
-        background-color: $black;
-        text-align: center;
-        padding: 1rem 2rem;
-        border-radius: 15px;
-        font-size: 1.25rem;
-        border: 1px solid $black;
-        transition: all .5s ease;
+    a {
+      color: $white;
+      font-weight: 700;
+      background-color: $black;
+      text-align: center;
+      padding: 1rem 2rem;
+      border-radius: 15px;
+      font-size: 1.25rem;
+      border: 1px solid $black;
+      transition: all 0.5s ease;
     }
-    a:hover{
-        background-color: unset;
-        color: $black;
+    a:hover {
+      background-color: unset;
+      color: $black;
     }
-    .teams{
-        width: 100%;
-        padding-right: 8rem;
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .teams {
+      width: 100%;
+      padding-right: 8rem;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
   }
   .img-wrapper {

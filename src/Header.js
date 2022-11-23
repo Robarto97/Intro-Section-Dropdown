@@ -12,10 +12,10 @@ const Header = () => {
     const dropdown = document.querySelector("#feature>.dropdown");
     if (eventIcon.src.match(arrowDown)) {
       eventIcon.src = arrowUp;
-      dropdown.style.display = "flex";
+      dropdown.classList.add("show");
     } else {
       eventIcon.src = arrowDown;
-      dropdown.style.display = "none";
+      dropdown.classList.remove("show");
     }
   };
   const handleCompany = () => {
@@ -23,10 +23,10 @@ const Header = () => {
     const dropdown = document.querySelector("#comp>.dropdown");
     if (eventIcon.src.match(arrowDown)) {
       eventIcon.src = arrowUp;
-      dropdown.style.display = "flex";
+      dropdown.classList.add("show");
     } else {
       eventIcon.src = arrowDown;
-      dropdown.style.display = "none";
+      dropdown.classList.remove("show");
     }
   };
   const handleMenu = () => {
